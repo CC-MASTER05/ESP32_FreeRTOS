@@ -52,14 +52,16 @@ void task2(void *arg)
     char rxBuff[50];
     while (true)
     {
-        xQueueReceive(queue1, (void *)rxBuff, (TickType_t)5); // always need to add delay to save over writing or overlapping
-        printf("Received data: %s \n", rxBuff);
-        vTaskDelay(1000/portTICK_PERIOD_MS);
+        if (xQueueReceive(queue1, (void *)rxBuff, (TickType_t)5))
+        { // always need to add delay to save over writing or overlapping
+            printf("Received data: %s \n", rxBuff);
+            vTaskDelay(1000 / portTICK_PERIOD_MS);
+        }
     }
 }
 
 void app_main(void)
 {
-    xTaskCreate(task1, "Task1", 4096, NULL, 10, &myTask1); //task1 for queue send
-    xTaskCreate(task2, "Task2", 4096, NULL, 9, &myTask2);  //task2 for queue receive
+    xTaskCreate(task1, "Task1", 4096, NULL, 10, &myTask1); // task1 for queue send
+    xTaskCreate(task2, "Task2", 4096, NULL, 9, &myTask2);  // task2 for queue receive
 }
