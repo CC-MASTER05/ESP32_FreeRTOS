@@ -9,5 +9,5 @@
 -`Queue`
 * Single Queue
 
-##Example##
+## Example
 * Serial Input without using UART[serial_input](/serial_input/)
