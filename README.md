@@ -10,4 +10,4 @@
 * Single Queue
 
 ## Example
-* Serial Input without using UART[serial_input](/serial_input/)
+* Serial Input without using UART ([serial_input](/serial_input/))
