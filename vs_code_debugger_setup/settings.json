@@ -1,0 +1,28 @@
+{
+    "C_Cpp.intelliSenseEngine": "Tag Parser",
+    "idf.adapterTargetName": "esp32s3",
+    "idf.customExtraPaths": "/home/dnk074/vs_espressif/tools/xtensa-esp-elf-gdb/11.2_20220823/xtensa-esp-elf-gdb/bin:/home/dnk074/vs_espressif/tools/riscv32-esp-elf-gdb/11.2_20220823/riscv32-esp-elf-gdb/bin:/home/dnk074/vs_espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin:/home/dnk074/vs_espressif/tools/xtensa-esp32s2-elf/esp-2022r1-11.2.0/xtensa-esp32s2-elf/bin:/home/dnk074/vs_espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin:/home/dnk074/vs_espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin:/home/dnk074/vs_espressif/tools/esp32ulp-elf/2.35_20220830/esp32ulp-elf/bin:/home/dnk074/vs_espressif/tools/openocd-esp32/v0.11.0-esp32-20221026/openocd-esp32/bin:/home/dnk074/vs_espressif/tools/esp-rom-elfs/20220823",
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "/home/dnk074/vs_espressif/tools/openocd-esp32/v0.11.0-esp32-20221026/openocd-esp32/share/openocd/scripts",
+        "ESP_ROM_ELF_DIR": "/home/dnk074/vs_espressif/tools/esp-rom-elfs/20220823/"
+    },
+    "idf.espIdfPath": "/home/dnk074/vs_espressif/esp-idf",
+    "idf.openOcdConfigs": [
+        "board/esp32s3-builtin.cfg"
+    ],
+    "idf.port": "/dev/ttyUSB0",
+    "idf.pythonBinPath": "/home/dnk074/vs_espressif/python_env/idf5.0_py3.8_env/bin/python",
+    "idf.toolsPath": "/home/dnk074/vs_espressif",
+    "idf.flashType": "JTAG",
+    "files.associations": {
+        "bitset": "c",
+        "chrono": "c",
+        "algorithm": "c",
+        "ltc24xx_general.h": "c",
+        "string_view": "c",
+        "regex": "c",
+        "gpio.h": "c",
+        "array": "c",
+        "string": "c"
+    }
+}

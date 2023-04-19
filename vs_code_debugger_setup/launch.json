@@ -1,0 +1,26 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "type": "espidf",
+        "name": "Launch",
+        "request": "launch",
+        "debugPort": 9998,
+        "logLevel": 4,
+        "mode": "auto",
+        "verifyAppBinBeforeDebug": false,
+        "tmoScaleFactor": 1,
+        "initGdbCommands": [
+          "target remote :3333",
+          "symbol-file /home/dnk074/vs_espressif/esp-idf/examples/IO_EXPANDER_TEST/ltc2497_test/build/ltc2497_test.elf",
+          "mon reset halt",
+          "flushregs",
+          "thb app_main",
+          "c"
+        ],
+        "env": {
+          "CUSTOM_ENV_VAR": "SOME_VALUE"
+        }
+      }
+    ]
+  }
