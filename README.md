@@ -10,5 +10,5 @@
 * Single Queue
 
 ## Example
-* Debugger Configuration [config_setup](/vs_code_debugger_setup)
+* Debugger Configuration ([config_setup](/vs_code_debugger_setup))
 * Serial Input without using UART ([serial_input](/serial_input/))
